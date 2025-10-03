@@ -2,7 +2,7 @@ import sqlite3
 
 def criar_tabela():
     try:
-        conexao = sqlite3.connet("biblioteca.db")
+        conexao = sqlite3.connect("biblioteca.db")
         cursor = conexao.cursor()
 
         cursor.execute("""
